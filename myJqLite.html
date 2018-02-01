@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    *{
+        margin:0px;
+        padding:0px;
+    }
+    
+    body{
+        height: 4000px;
+    }
+    ul,ol{
+        
+        list-style:none;
+    }
+    .header{
+        height: 44px;
+        width: 100%;
+        line-height: 44px;
+        background: #000;
+        margin-top:0px;
+    }
+    .header ul > li{
+        
+        height: 44px;				
+        line-height: 44px;
+        width:120px;
+        display: inline-block;
+        float: left;
+        color:#fff;
+        cursor:pointer;
+        text-align: center;
+        position: relative;
+        
+    }
+    
+    .header ul ol{
+        
+        position: absolute;
+        background: red;
+        width: 120px;
+        top:44px;
+        left:0px;
+        display: none;
+    }
+
+
+    .tabs{
+				
+				width: 400px;
+				
+				height: 300px;
+				
+				margin:100px auto;
+				border: 1px solid #eee;
+				
+			}
+			
+			.tabs .cate{
+				
+				height: 34px;
+				line-height:34px;
+				background: #eee;	
+				display: flex;			
+				
+			}
+			.tabs .cate li{				
+				flex: 1;
+				text-align: center;
+			}
+			
+			.list3 div{
+				
+				display: none;
+			}
+    
+</style>
+<script src="tools.js"></script>
+<script src="myJqLite.js"></script>
+<script>
+    window.onload=function(){
+
+ //  /*1-7*/   
+        
+      //$('.box').css('background','red').css('marginTop','20px').css('height','220px');
+
+
+
+/*1-10*/    
+        // $('#aa').css({
+        //     width:'100px',
+        //     height:'100px',
+        //     background:'orange',
+        //     margin:'10px'
+        // })
+
+
+//html
+    
+     //alert($('#aa').html());
+
+
+
+
+  //click
+
+        // $("button").click(function(){
+        //     $('#aa').css({
+        //     	width:'100px',
+        //     	height:'100px',
+        //     	background:'red'
+                
+        //     })
+        // })
+
+
+ //hover
+        // $('#list>li').hover(function(){
+                            
+        // 					this.getElementsByTagName('ol')[0].style.display="block";
+                            
+        // 				},function(){
+        // 					this.getElementsByTagName('ol')[0].style.display="none";
+                            
+        // 				})
+
+
+//show()
+
+        // $('button').click(function(){
+                            
+        // 					$('#box1').show();
+        // 				})
+
+
+
+//hide()
+
+        // $('button').click(function(){
+                            
+        //     $('#box2').hide();
+        
+        // })
+
+
+/*可以实现 但是想的实现一个find的方法
+ * 
+ find方法表示找到当前节点下面的xxx节点
+ 
+ * */
+
+
+        //  $('#list>li').hover(function(){					
+        // 					$(this).find('ol').show();					
+                            
+        // 				},function(){
+        // 					$(this).find('ol').hide();
+                            
+        // 				})		
+            
+        // 				$('button').click(function(){
+                            
+        //                     $('#box1').show();
+
+        //                     $('#aa').css({
+        //                         width:'100px',
+        //                         height:'100px',
+        //                         background:'blue'
+                                
+        //                         })
+        // 				})
+
+//first&last
+
+        // $('.list2 li').first().css("color",'red');				
+				
+		// $('.list2 li').last().css("color",'#eee');
+
+
+
+       // $('.list2').find('li').last().css("color",'blue');
+
+
+
+//index()
+
+    //    $('.cate li').click(function(){
+					
+	// 				$('.cate li').css("background","#eee")
+	// 				$(this).css("background","#fff");
+					
+					
+	// 				alert($(this).index())  // 0 1 2
+	// 			})
+
+
+//eq()    index()  实现tab切换
+
+
+
+
+
+        //     $('.list3 div').first().show()   //让第一个详情显示
+                
+
+        //     $('.cate li').first().css("background","#fff");  //让第一个背景显示选中	
+
+        // $('.cate li').click(function(){  //点击事件
+
+        //     $('.cate li').css("background","#eee")  //改变自己的背景颜色
+        //     $(this).css("background","#fff");
+                        
+        
+        //     $('.list3 div').hide();					
+        //     $('.list3 div').eq($(this).index()).show()
+        // })
+
+
+
+            // $('.cate li').first().css('background','#fff');
+          
+            // $('.list3 div').first().show();
+
+            // $('.cate li').click(function(){
+
+               
+            //     $('.cate li').css('background','#eee');
+            //     $(this).css('background','#fff');
+
+            //     $('.list3 div').hide();
+
+            //     $('.list3 div').eq($(this).index()).show();
+
+
+            // })
+
+
+//silbings 兄弟节点
+
+                // $('button').click(function(){
+
+                // //    $(this).css("background",'blue').siblings('li').css("background",'red');
+
+                //     $('.list2 li').siblings('.add').css('background','red');
+                // })
+                
+  //attr（）          
+//获取属性名字 和增加属性 
+		//		alert($('#main').attr('class'));  //获取属性名字
+
+				$('#main').attr('data-aid','123');  // 增加自定义属性 
+				
+				
+                	alert($('#info').value())  //我是表单
+                
+          //       $('#info').value('这是改变表单的内容')
+
+
+
+          
+
+   }
+
+
+
+
+
+</script>
+<body>
+
+<!-- &&&& -->
+
+    <button>点我</button>
+    <div id="aa">aaaa</div>
+    <div id="box1" class="box" style="display: none; background: red;">11111</div>
+    <div id="box2" class="box">22222</div>
+    <div id="box3" class="box">33333</div>
+
+
+<!-- &&&& -->
+
+    <div class="header">
+            <ul id="list">
+                <li>国内</li>			
+                <li>国际
+                    <ol>
+                        <li>快乐大营11</li>
+                        <li>天天向上11</li>
+                        <li>天天向上11</li>
+                        <li>天天向上</li>
+                        <li>天天向上</li>
+                    </ol>	
+                </li>
+                <li>
+                    娱乐
+                    <ol>
+                        <li>快乐大营</li>
+                        <li>天天向上</li>
+                        <li>天天向上</li>
+                        <li>天天向上</li>
+                        <li>天天向上</li>
+                    </ol>					
+                    
+                </li>
+        </ul>
+        
+    </div>
+
+<!-- &&&& -->
+
+    <ul class="list2">
+			<li>这是第一个节点</li>
+			<li class="add">这是第二个节点</li>
+			<li>这是第三个节点</li>
+			<li>这是第四个节点</li>
+		</ul>
+    <br />
+        <div id="main" class=" is classname">
+			
+            我是获取内容
+            </div>
+            
+            <input id="info" type="text" value="我是表单" />
+
+<!-- &&&& -->
+
+        <div class="tabs">
+                <ul class="cate">
+                    <li>女装</li>
+                    <li>鞋子</li>				
+                    <li>男装</li>
+                </ul>
+                
+                <div class="list3">
+                    
+                    <div>
+                        女装
+                        
+                    </div>
+                    
+                    <div>
+                        鞋子
+                        
+                    </div>
+                    <div>
+                        男装
+                        
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+
+
+</body>
+</html>
